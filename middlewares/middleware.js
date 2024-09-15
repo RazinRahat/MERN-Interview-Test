@@ -6,7 +6,7 @@ const auth = async (req, res, next) => {
         const token = authorization.split(' ')[1]
         if (token) {
             try {
-                const userInfo = await jwt.verify(token, 'farid')
+                const userInfo = await jwt.verify(token, 'whiteboard')
                 req.userInfo = userInfo
                 next()
             } catch (error) {

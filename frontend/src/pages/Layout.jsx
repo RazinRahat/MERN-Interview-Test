@@ -7,7 +7,7 @@ import userImage from '../assets/user.png'
 
 const Layout = () => {
 
-    const userInfo = token_decode(localStorage.getItem('canva_token'))
+    const userInfo = token_decode(localStorage.getItem('whiteboard'))
 
     const navigate = useNavigate()
     const { pathname } = useLocation()
@@ -24,7 +24,7 @@ const Layout = () => {
     }
 
     const logout = () => {
-        localStorage.removeItem('canva_token')
+        localStorage.removeItem('whiteboard')
         window.location.href = '/'
     }
 
@@ -34,7 +34,7 @@ const Layout = () => {
                 <div className='w-[93%] m-auto py-3'>
                     <div className='flex justify-between items-center'>
                         <div className='w-[80px] h-[48px]'>
-                            <img className='w-full h-full' src="https://static.canva.com/web/images/12487a1e0770d29351bd4ce4f87ec8fe.svg" alt="" />
+                            <h1 className='text-[#e0dddd] text-2xl font-bold'>Whiteboard</h1>
                         </div>
                         <div className='flex gap-4 justify-center items-center relative'>
                             <button onClick={create} className='py-2 px-6 overflow-hidden text-center bg-[#8b3dff] text-white rounded-[3px] font-medium hover:bg-[#9553f8]'>Create a Design</button>

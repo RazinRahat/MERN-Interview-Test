@@ -12,7 +12,7 @@ import CreateDesign from './components/CreateDesign'
 import Main from "./pages/Main";
 import { token_decode } from './utils/index'
 
-const userInfo = token_decode(localStorage.getItem('canva_token'))
+const userInfo = token_decode(localStorage.getItem('whiteboard'))
 
 const router = createBrowserRouter([
   {

@@ -25,7 +25,7 @@ class authController {
                     name: user.name,
                     email: user.email,
                     _id: user.id
-                }, 'farid', {
+                }, 'whiteboard', {
                     expiresIn: '2d'
                 })
 
@@ -51,7 +51,7 @@ class authController {
                         name: user.name,
                         email: user.email,
                         _id: user.id
-                    }, 'farid', {
+                    }, 'whiteboard', {
                         expiresIn: '2d'
                     })
 
